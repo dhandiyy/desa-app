@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Desa Website
 
-## Getting Started
+Template website desa modern yang terintegrasi dengan Desa CMS (on going). Didesain khusus untuk kebutuhan desa di Madura dengan fokus pada kemudahan penggunaan, performa dan biaya yang minim.
 
-First, run the development server:
+## 🌟 Fitur Website
+
+### Beranda
+- Slideshow berita terkini
+- Statistik desa
+- Pengumuman penting
+- Links to vital services
+
+### Profil Desa
+- Sejarah desa
+- Visi & misi
+- Struktur pemerintahan
+- Demografi penduduk
+
+### Layanan
+- Form pengaduan masyarakat
+- Tracking status pengaduan
+- Informasi layanan desa
+
+### Transparansi
+- Informasi APBD
+- Laporan realisasi anggaran
+- Program desa
+
+### Informasi & Media
+- Berita desa
+- Artikel
+- Galeri foto & video
+- Agenda kegiatan
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 13 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: React Context / Zustand / Redux
+- **Data Fetching**: TanStack Query / Axios
+
+## 🚀 Deployment
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+
+# Setup environment variables
+cp .env.example .env.local
+
+# Build untuk production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+NEXT_PUBLIC_CMS_URL=
+NEXT_PUBLIC_VILLAGE_ID=
+CMS_API_KEY=
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔒 Security Features
 
-## Learn More
+- API Key authentication
+- Rate limiting
+- CORS protection
 
-To learn more about Next.js, take a look at the following resources:
+## 💡 Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Deploy template website
+2. Konfigurasi environment variables
+3. Hubungkan dengan CMS menggunakan API key
+4. Mulai mengelola konten melalui CMS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 License
 
-## Deploy on Vercel
+Distributed under the MIT License. See `LICENSE` for more information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Roadmap
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Phase 1 (Current):
+- [x] Basic website template
+- [ ] CMS integration
+- [ ] Deployment untuk 3 desa pilot
+
+Phase 2:
+- [ ] Additional customization options
+- [ ] Performance optimization
+- [ ] Extended features
