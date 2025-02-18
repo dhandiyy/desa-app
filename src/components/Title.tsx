@@ -1,10 +1,19 @@
 import React from "react";
 
-const Title = () => {
+interface TitleProps {
+	position: string;
+	textSize: string;
+	height: string;
+	text: string;
+}
+
+const Title: React.FC<TitleProps> = ({ position, textSize, height, text }) => {
 	return (
-		<div className="mt-40 flex items-center h-16 justify-end pr-14">
-			<div className="h-full w-2 bg-primary rounded-full mr-5" />
-			<p className="text-6xl font-semibold font-montserrat">Sekilas Tentang Arjasa</p>
+		<div className={`flex ${position} items-end`}>
+			<div className="flex items-center pr-5">
+				<div className={`w-[10px] ${height} bg-primary rounded-full mr-5`} />
+				<p className={`${textSize} font-semibold font-montserrat`}>{text}</p>
+			</div>
 		</div>
 	);
 };
