@@ -9,11 +9,11 @@ const Navbar = () => {
 	const pathname = usePathname();
 	
 	return (
-		<div className="bg-primary py-4 rounded-2xl text-white">
+		<div className="bg-primary p-4 sm:rounded-xl rounded-lg text-white">
 			<div className="relative flex flex-col sm:mx-6 sm:flex-row sm:items-center sm:justify-between">
 				
-				<div className="flex items-center gap-2">
-					<div className="relative w-12 h-12 sm:w-14 sm:h-14">
+				<div className="flex items-center gap-1 md:gap-2">
+					<div className="relative w-10 h-10 sm:w-16 sm:h-16">
 						<Image
 							src="/logo/Lambang_Kabupaten_Sumenep.png"
 							alt="Logo desa"
@@ -22,9 +22,9 @@ const Navbar = () => {
 							sizes="(max-width: 768px) 48px, 64px"
 						/>
 					</div>
-					<div>
-						<p className="text-xl sm:text-3xl font-extrabold font-montserrat">Desa Arjasa</p>
-						<p className="text-sm sm:text-base font-light">Sumenep, Jawa Timur</p>
+					<div className="flex flex-col">
+						<p className="text-lg sm:text-3xl font-extrabold font-montserrat">Desa Duko</p>
+						<p className="text-xs sm:text-base font-medium">Rubaru, Sumenep</p>
 					</div>
 				</div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
 
 				<label
 					htmlFor="navbar-open"
-					className="cursor-pointer absolute right-0 mt-3 sm:hidden"
+					className="cursor-pointer absolute right-2 md:mt-3 mt-2.5 sm:hidden"
 				>
 					<IoMenu
 						size={24}
@@ -47,7 +47,7 @@ const Navbar = () => {
 				<nav className="peer-checked:block hidden mt-4 sm:mt-0 sm:block">
 					<ul className="flex flex-col sm:flex-row gap-y-1 sm:gap-x-4 sm:pr-4">
 						<Link href={"/"}>
-							<li className="sm:font-light relative group sm:text-lg">
+							<li className="font-light relative group sm:text-lg">
 								Home
 								{pathname === "/" && (
 									<div className="hidden sm:block">
@@ -58,7 +58,7 @@ const Navbar = () => {
 						</Link>
 
 						<Link href={"/profile-desa"}>
-							<li className="sm:font-light relative group sm:text-lg">
+							<li className="font-light relative group sm:text-lg">
 								Profil Desa
 								{pathname === "/profile-desa" && (
 									<div className="hidden sm:block">
@@ -69,7 +69,7 @@ const Navbar = () => {
 						</Link>
 
 						<Link href={"/bansos"}>
-							<li className="sm:font-light relative group sm:text-lg">
+							<li className="font-light relative group sm:text-lg">
 								Informasi Bansos
 								{pathname === "/bansos" && (
 									<div className="hidden sm:block">
@@ -80,7 +80,7 @@ const Navbar = () => {
 						</Link>
 
 						<Link href={"/berita"}>
-							<li className="sm:font-light relative group sm:text-lg">
+							<li className="font-light relative group sm:text-lg">
 								Berita
 								{pathname === "/berita" && (
 									<div className="hidden sm:block">

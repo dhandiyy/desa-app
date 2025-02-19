@@ -7,8 +7,9 @@ import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Home() {
-	const textArjasa =
-		"Desa Arjasa merupakan bagian dari Kecamatan Arjasa, Kab. Sumenep.Berlokasi di dekat laut dengan pantai berpasir putih seperti Pasir Putih Batu Gulok yang dikelilingi perairan Laut Jawa. Sebagai wilayah kepulauan di Pulau Kangean, desa ini memiliki potensi wisata alam yang menakjubkan. Aksesibilitasnya dekat pelabuhan menjadikannya ramai dikunjungi, terutama saat liburan. Pengembangan fasilitas wisata terus dilakukan melalui kolaborasi pemerintah dan kelompok masyarakat setempat";
+	const textDuko =  
+	"Desa Duko merupakan bagian dari Kecamatan Rubaru, Kab. Sumenep. Berbatasan dengan Desa Basoka di selatan dengan Air Terjun Turbughen sebagai batas alami. Desa ini terdiri dari tiga dusun, yaitu Padatar Timur, Padatar Barat, dan Laok Lorong. Keindahan alamnya yang unik menjadikannya destinasi menarik. Aksesibilitasnya yang baik dengan kode pos 69456 dan kode Kemendagri 35.29.15.2009 mendorong pengembangan wisata dan sosial yang terus berlanjut.";  
+
 
 	const nikahGratis =
 		"Pelayanan desa tentang nikah gratis memberikan kesempatan bagi pasangan yang kurang mampu untuk melangsungkan pernikahan tanpa biaya. Program ini difasilitasi oleh pemerintah desa yang membantu dalam hal administrasi, pengurusan dokumen, serta proses pernikahan. Tujuannya adalah untuk mempermudah pasangan yang ingin menikah namun terkendala biaya, sekaligus memastikan legalitas pernikahan mereka sesuai dengan ketentuan hukum.";
@@ -18,20 +19,22 @@ export default function Home() {
 			{/* SECION1 */}
 			<Hero />
 
-			<div className="mt-36 ml-9">
-				<Title
-					height="h-14"
-					position="justify-end"
-					text="Sekilas Tentang Desa Arjasa"
-					textSize="text-6xl"
-				/>
+			<div className="mt-36 justify-end flex px-24">
+				<div className="w-1/2">
+					<Title
+						height="h-28"
+						position="justify-end"
+						text="Sekilas Tentang Desa Duko"
+						textSize="text-6xl"
+					/>
+				</div>
 			</div>
 			<div className="min-h-screen w-full bg-blue-100 rounded-tl-[250px] mt-3 -mb-32 pb-40">
 				{/* SECTION2 */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-6 md:px-24 py-7">
 					{/* Grid start */}
-					<div className="relative -mt-16 md:-mt-28 flex items-center justify-center">
-						<div className="h-[550px] w-[550px] relative">
+					<div className="relative -mt-16 md:-mt-48 flex items-center justify-center">
+						<div className="h-[600px] w-[600px] relative">
 							<Image
 								src="/sea1.png"
 								alt="Deskripsi hero section"
@@ -44,7 +47,7 @@ export default function Home() {
 					</div>
 
 					<div className="space-y-4 flex flex-col">
-						<SmallCard text={textArjasa} />
+						<SmallCard text={textDuko} />
 
 						<div className="flex flex-col sm:flex-row gap-4">
 							<div className="bg-white rounded-xl p-4 md:p-7 flex-1">
@@ -60,18 +63,18 @@ export default function Home() {
 
 							<div className="bg-white rounded-xl p-4 md:p-7 flex-1">
 								<p>
-									<i>Komoditas: </i>
-									<b>Ikan</b>
+									<i>Sektor Pendapatan: </i>
+									<b>Wisata</b>
 								</p>
 							</div>
 						</div>
 
-						<button className="bg-primary px-7 py-3 rounded-full text-white hover:bg-primary/90 transition-colors">
+						<button className="bg-primary px-7 py-3 rounded-full text-white hover:bg-primary/90 duration-200 transition-colors w-1/2">
 							Profile Desa <FaLongArrowAltRight className="inline text-xl ml-3" />
 						</button>
 					</div>
 
-					<div className="relative">
+					<div className="relative mt-20">
 						<div className="absolute -left-3 w-full h-full bg-primary rounded-xl" />
 						<div className="relative bg-white p-7 rounded-xl flex flex-col justify-between h-full w-full z-50">
 							<div className="flex items-center">
@@ -88,20 +91,20 @@ export default function Home() {
 							</div>
 							<div>
 								<p className="mt-16">
-									Selamat datang di Desa Arjasa. Saya sebagai kepala desa berjanji akan memakmurkan desa, meningkatkan
+									Selamat datang di Desa Duko. Saya sebagai kepala desa berjanji akan memakmurkan desa, meningkatkan
 									infrastruktur, kesehatan dan pendidikan
 								</p>
 								<div className="flex items-center mt-4">
 									<div className="h-2 w-2 bg-primary" />
 									<p>
-										<i className="text-sm ml-3">Kepala Desa Arjasa</i>
+										<i className="text-sm ml-3">Kepala Desa Duko</i>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div>
+					<div className="relative mt-20">
 						<div className="flex flex-col">
 							<div className="flex gap-4">
 								<div className="bg-white rounded-xl p-7 flex-1">
@@ -117,7 +120,7 @@ export default function Home() {
 								<div className="bg-white rounded-xl p-7 flex-1">
 									<Title
 										position="justify-start"
-										text="Jumlah Program Bansos"
+										text="Jumlah Penduduk Penerima Bansos"
 										height="h-8"
 										textSize="text-sm"
 									/>
@@ -131,7 +134,7 @@ export default function Home() {
 					</div>
 
 					{/* SECTION3 */}
-					<div className="py-7 col-span-2 mt-32">
+					<div className="py-7 col-span-2 mt-20">
 						<Title
 							text="Layanan Desa"
 							position="justify-start"
@@ -156,7 +159,7 @@ export default function Home() {
 									</li>
 								</ul>
 							</div>
-							<div className="flex-1 items-center justify-center">
+							<div className="flex-1 items-center justify-center overflow-hidden rounded-[45px]">
 								<SmallCard
 									text={nikahGratis}
 									titleCard="Nikah Gratis"
@@ -166,18 +169,18 @@ export default function Home() {
 					</div>
 
 					{/* SECTION4 */}
-					<div className="py-7 col-span-2 mt-28">
+					<div className="py-7 col-span-2 mt-20">
 						<Title
 							text="Galeri dan Dokumentasi"
 							position="justify-start"
 							textSize="text-6xl"
 							height="h-14"
 						/>
-						<ImageGallery/>
+						<ImageGallery />
 					</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</div>
 	);
 }

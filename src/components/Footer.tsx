@@ -21,8 +21,8 @@ const Footer = () => {
 						sizes="(max-width: 768px) 48px, 64px"
 					/>
 				</div>
-				<p className="font-montserrat text-5xl font-bold mt-4">Desa Arjasa</p>
-				<p className="font-semibold text-md mt-2">Kecamatan Arjasa, Kabupaten Sumenep </p>
+				<p className="font-montserrat text-5xl font-bold mt-4">Desa Duko</p>
+				<p className="font-semibold text-md mt-2">Kecamatan Rubaru, Kabupaten Sumenep </p>
 			</div>
 
 			<div className="flex items-start justify-around w-full mt-14 md:px-20">
