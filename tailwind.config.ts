@@ -11,6 +11,7 @@ export default {
 			colors: {
 				primary: "#074799",
 				secondary: "#E1FFBB",
+				custom_background: "#ECECEC"
 			},
 			fontFamily: {
 				sans: ["var(--font-inter)", "Arial"],
@@ -19,4 +20,9 @@ export default {
 		},
 	},
 	plugins: [],
+	purge: [
+		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+	]
 } satisfies Config;

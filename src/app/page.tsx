@@ -7,9 +7,8 @@ import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Home() {
-	const textDuko =  
-	"Desa Duko merupakan bagian dari Kecamatan Rubaru, Kab. Sumenep. Berbatasan dengan Desa Basoka di selatan dengan Air Terjun Turbughen sebagai batas alami. Desa ini terdiri dari tiga dusun, yaitu Padatar Timur, Padatar Barat, dan Laok Lorong. Keindahan alamnya yang unik menjadikannya destinasi menarik. Aksesibilitasnya yang baik dengan kode pos 69456 dan kode Kemendagri 35.29.15.2009 mendorong pengembangan wisata dan sosial yang terus berlanjut.";  
-
+	const textDuko =
+		"Desa Duko merupakan bagian dari Kecamatan Rubaru, Kab. Sumenep. Berbatasan dengan Desa Basoka di selatan dengan Air Terjun Turbughen sebagai batas alami. Desa ini terdiri dari tiga dusun, yaitu Padatar Timur, Padatar Barat, dan Laok Lorong. Keindahan alamnya yang unik menjadikannya destinasi menarik. Aksesibilitasnya yang baik dengan kode pos 69456 dan kode Kemendagri 35.29.15.2009 mendorong pengembangan wisata dan sosial yang terus berlanjut.";
 
 	const nikahGratis =
 		"Pelayanan desa tentang nikah gratis memberikan kesempatan bagi pasangan yang kurang mampu untuk melangsungkan pernikahan tanpa biaya. Program ini difasilitasi oleh pemerintah desa yang membantu dalam hal administrasi, pengurusan dokumen, serta proses pernikahan. Tujuannya adalah untuk mempermudah pasangan yang ingin menikah namun terkendala biaya, sekaligus memastikan legalitas pernikahan mereka sesuai dengan ketentuan hukum.";
@@ -19,28 +18,25 @@ export default function Home() {
 			{/* SECION1 */}
 			<Hero />
 
-			<div className="mt-36 justify-end flex px-24">
-				<div className="w-1/2">
+			<div className="md:mt-36 mt-10 justify-end flex md:px-24 px-3">
+				<div className="sm:w-1/2">
 					<Title
 						height="h-28"
 						position="justify-end"
 						text="Sekilas Tentang Desa Duko"
-						textSize="text-6xl"
 					/>
 				</div>
 			</div>
-			<div className="min-h-screen w-full bg-blue-100 rounded-tl-[250px] mt-3 -mb-32 pb-40">
-				{/* SECTION2 */}
+			<div className="min-h-screen w-full bg-custom_background md:rounded-tl-[250px] rounded-xl mt-3 -mb-32 pb-40">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-6 md:px-24 py-7">
-					{/* Grid start */}
-					<div className="relative -mt-16 md:-mt-48 flex items-center justify-center">
-						<div className="h-[600px] w-[600px] relative">
+					<div className="relative mt-20 md:-mt-48 flex items-center justify-center rounded-lg invisible md:visible">
+						<div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]">
 							<Image
 								src="/sea1.png"
 								alt="Deskripsi hero section"
 								fill
-								className="object-cover"
-								sizes="(max-width: 768px) 80vw, 40vw"
+								className="object-cover rounded-lg"
+								sizes="(max-width: 640px) 300px, (max-width: 768px) 400px, (max-width: 1024px) 400px, 600px"
 								priority
 							/>
 						</div>
@@ -91,8 +87,8 @@ export default function Home() {
 							</div>
 							<div>
 								<p className="mt-16">
-									Selamat datang di Desa Duko. Saya sebagai kepala desa berjanji akan memakmurkan desa, meningkatkan
-									infrastruktur, kesehatan dan pendidikan
+									Selamat datang di Desa Duko. Saya sebagai kepala desa berjanji akan memakmurkan desa, meningkatkan infrastruktur,
+									kesehatan dan pendidikan
 								</p>
 								<div className="flex items-center mt-4">
 									<div className="h-2 w-2 bg-primary" />
@@ -107,23 +103,21 @@ export default function Home() {
 					<div className="relative mt-20">
 						<div className="flex flex-col">
 							<div className="flex gap-4">
-								<div className="bg-white rounded-xl p-7 flex-1">
-									<Title
-										position="justify-start"
-										text="Jumlah Program Bansos"
-										height="h-8"
-										textSize="text-sm"
-									/>
+								<div className="bg-white rounded-xl p-7 flex flex-col flex-1">
+									<div className="flex flex-1 items-center justify-center">
+										<div className={`md:w-[6px] w-[8px] h-9 bg-primary rounded-full mr-5`} />
+										<p className="text-xl my-auto flex-1">Jumlah Program Bansos</p>
+									</div>
+
 									<p className="font-montserrat text-9xl font-semibold mt-16">88</p>
 								</div>
 
-								<div className="bg-white rounded-xl p-7 flex-1">
-									<Title
-										position="justify-start"
-										text="Jumlah Penduduk Penerima Bansos"
-										height="h-8"
-										textSize="text-sm"
-									/>
+								<div className="bg-white rounded-xl p-7 flex flex-col flex-1">
+									<div className="flex flex-1 items-center justify-center">
+										<div className={`md:w-[6px] w-[8px] h-14 bg-primary rounded-full mr-5`} />
+										<p className="text-xl my-auto flex-1">Jumlah Penduduk Penerima Bansos</p>
+									</div>
+
 									<p className="font-montserrat text-9xl font-semibold mt-16">88</p>
 								</div>
 							</div>
@@ -138,7 +132,6 @@ export default function Home() {
 						<Title
 							text="Layanan Desa"
 							position="justify-start"
-							textSize="text-6xl"
 							height="h-14"
 						/>
 
@@ -173,7 +166,6 @@ export default function Home() {
 						<Title
 							text="Galeri dan Dokumentasi"
 							position="justify-start"
-							textSize="text-6xl"
 							height="h-14"
 						/>
 						<ImageGallery />

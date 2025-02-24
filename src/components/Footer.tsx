@@ -9,7 +9,7 @@ const Footer = () => {
 				src="/footer/footer.png"
 				alt="Footer background"
 				fill
-				className="object-fill -z-10" // -z-10 memastikan image ada di belakang
+				className="object-fill -z-10" 
 			/>
 			<div className="flex flex-col items-center justify-center">
 				<div className="relative w-12 h-12 sm:w-24 sm:h-24">

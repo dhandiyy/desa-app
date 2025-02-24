@@ -9,9 +9,9 @@ const SmallCard: React.FC<SmallCardProps> = ({ text, titleCard }) => {
 	return (
 		<div className="bg-white p-7 rounded-xl h-full">
 			{titleCard && (
-				<p className="font-extrabold text-2xl mb-2">{titleCard}</p>
+				<p className="md:font-extrabold font-bold md:text-2xl text-xl mb-2 font-montserrat">{titleCard}</p>
 			)}
-			<p>{text}</p>
+			<p className="text-sm md:text-base">{text}</p>
 		</div>
 	);
 };

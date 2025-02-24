@@ -11,7 +11,7 @@ const Hero = () => {
 			{/* Image Component */}
 			<div className="absolute inset-0">
 				<Image
-					src="/hero/hero.jpg"
+					src="/hero/hero.png"
 					alt="Deskripsi hero section"
 					fill
 					priority
@@ -21,22 +21,26 @@ const Hero = () => {
 			</div>
 
 			{/* Konten Teks */}
-			<div className="flex w-full justify-between items-center sm:flex-row sm:mx-20">
-				<div className="relative z-10 text-white mb-20 flex flex-col justify-center">
-					<p className="text-xl md:text-2xl font-bold">Website Resmi</p>
-					<h1 className="text-4xl md:text-[110px] my-10 font-bold font-montserrat -m-2">Desa Duko</h1>
-					<p className="text-xl md:text-2xl font-bold">kecamatan Rubaru, Kabupaten Sumenep</p>
+			<div className="flex flex-col w-full h-screen md:items-end z-10 lg:justify-between lg:flex-row lg:mx-20 lg:py-20 items-center  justify-between">
+
+				<div className="relative z-10 text-white flex flex-col items-center md:items-start max-w-7xl mx-auto w-full flex-1 justify-center">
+					<p className="text-base sm:text-xl md:text-2xl font-bold">Website Resmi</p>
+
+					<h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[110px] font-bold font-montserrat leading-tight">Desa Duko</h1>
+					<p className="text-base sm:text-xl md:text-2xl font-bold mt-2">Kecamatan Rubaru, Kabupaten Sumenep</p>
 				</div>
 
-				<div className="relative h-44 w-72 bg-white/25 backdrop-blur-sm rounded-xl mb-20 flex flex-col items-center justify-between p-7 z-20">
-					<p className="text-white font-sans italic text-justify">Anda memiliki pengaduan terkait desa? silakan laporkan di sini.</p>
+				<div className="relative md:h-44 md:w-72 h-30 w-64 bg-white/25 backdrop-blur-sm rounded-xl flex flex-col items-center justify-between p-7 z-20 mb-10 sm:mb-0">
+					<p className="text-white font-sans italic text-justify text-xs md:text-base">
+						Anda memiliki pengaduan terkait desa? silakan laporkan di sini.
+					</p>
 
-					<button className="bg-white w-full py-2 rounded-xl flex items-center justify-center hover:cursor-pointer hover:bg-primary hover:text-white font-semibold mt-3 group transition-colors duration-200">
+					<button className="bg-white w-full md:py-2 py-1 rounded-xl flex items-center justify-center hover:cursor-pointer hover:bg-primary hover:text-white font-semibold mt-3 group transition-colors duration-200">
 						<IoWarningOutline
 							className="mr-3 text-black group-hover:text-white transition-colors duration-200"
 							size={24}
 						/>
-						<p>Pengaduan</p>
+						<p className="text-sm md:text-base">Pengaduan</p>
 					</button>
 				</div>
 			</div>
