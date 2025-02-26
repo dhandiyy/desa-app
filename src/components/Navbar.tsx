@@ -13,7 +13,7 @@ const Navbar = () => {
 			<div className="relative flex flex-col sm:mx-6 sm:flex-row sm:items-center sm:justify-between">
 				
 				<div className="flex items-center gap-1 md:gap-2">
-					<div className="relative w-10 h-10 sm:w-16 sm:h-16">
+					<div className="relative w-12 h-12 sm:w-16 sm:h-16">
 						<Image
 							src="/logo/Lambang_Kabupaten_Sumenep.png"
 							alt="Logo desa"
@@ -24,7 +24,7 @@ const Navbar = () => {
 					</div>
 					<div className="flex flex-col">
 						<p className="text-lg sm:text-3xl font-extrabold font-montserrat">Desa Duko</p>
-						<p className="text-xs sm:text-base font-medium">Rubaru, Sumenep</p>
+						<p className="text-sm sm:text-base font-medium">Rubaru, Sumenep</p>
 					</div>
 				</div>
 

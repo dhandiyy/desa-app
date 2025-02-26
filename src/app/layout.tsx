@@ -34,7 +34,7 @@ export default function RootLayout({
 			lang="en"
 			className={`${inter.variable} ${montserrat.variable}`}
 		>
-			<body className="sm:p-3 p-1.5">
+			<body className="sm:p-3 p-2">
 				<Navbar />
 				{children}
 			</body>
