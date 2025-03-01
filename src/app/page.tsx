@@ -135,7 +135,7 @@ export default function Home() {
 							height="h-14"
 						/>
 
-						<div className="border border-white flex p-4 rounded-[45px] gap-4 mt-6">
+						<div className="border border-white flex p-4 rounded-[45px] gap-4 mt-6 md:flex-row flex-col">
 							<div className="bg-white p-4 rounded-[38px] items-center">
 								<ul>
 									<li className="border border-gray-200 p-2 rounded-3xl hover:cursor-pointer hover:bg-secondary active:bg-primary active:text-white my-1">

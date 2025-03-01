@@ -40,7 +40,7 @@ const SmallHero: React.FC<SmallHeroProps> = ({
 					src={backgroundImage}
 					alt="Background"
 					fill
-					className="object-cover rounded-xl rounded-b-[80px]"
+					className="object-cover rounded-sm rounded-b-[80px]"
 					priority
 				/>
 			</div>

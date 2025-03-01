@@ -57,14 +57,14 @@ const ProfilePage = () => {
 				</div>
 
 				<div className="bg-custom_background rounded-2xl mt-8 flex md:items-center flex-col md:flex-row gap-5 p-5">
+					<div className="h-[20vh] w-full bg-blue-200 rounded-xl justify-center items-center flex md:flex-1">
+						<p>Ini Maps nih</p>
+					</div>
 					<div className="md:flex-1 md:self-stretch items-center">
 						<SmallCard
 							titleCard="Lokasi"
 							text={textLocation}
 						/>
-					</div>
-					<div className="h-[20vh] w-full bg-blue-200 rounded-xl justify-center items-center flex md:flex-1">
-						<p>Ini Maps nih</p>
 					</div>
 				</div>
 
@@ -77,8 +77,7 @@ const ProfilePage = () => {
 				</div>
 
 				<div className="bg-custom_background p-5 rounded-2xl mt-2 md:mt-9 md:mb-6 md:flex md:items-center md:gap-5">
-
-					<div className="bg-white p-7 rounded-xl h-full md:flex-1">
+					<div className="bg-white p-7 rounded-xl md:flex-1 md:self-stretch">
 						<div className="flex justify-between items-center">
 							<p className="md:font-extrabold font-bold md:text-2xl text-xl mb-2 font-montserrat">Laporan</p>
 
@@ -112,7 +111,7 @@ const ProfilePage = () => {
 						</p>
 					</div>
 
-					<div className="bg-white p-7 rounded-xl h-full mt-2 flex flex-col gap-8 md:flex-1 md:flex-row md:justify-between">
+					<div className="bg-white p-7 rounded-xl mt-2 flex flex-col gap-2 md:flex-1 md:flex-row md:justify-between md:flex-wrap md:self-stretch">
 						<div>
 							<div className="flex items-center">
 								<FaAngleUp
@@ -130,9 +129,35 @@ const ProfilePage = () => {
 									aria-hidden="true"
 									className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center md:size-7 justify-self-end sm:size-4 text-red-500"
 								/>
-								<p className="text-sm md:text-base">Pengeluaran</p>
+								<p className="text-sm md:text-base">Belanja</p>
 							</div>
 							<p className="text-2xl font-extrabold md:text-3xl">Rp. 1.500.000.000</p>
+						</div>
+
+						<div className="w-full hidden md:flex">
+							<div className="w-full">
+								<h2 className="border-y p-2 font-bold">Pengelolaan</h2>
+
+								<div className="flex justify-around">
+									{/* Card Pertama */}
+									<div className="flex flex-col">
+										<div className="p-2 border-b">
+											<p className="text-sm italic">Pemasukan</p>
+											<p className="font-extrabold text-xl text-green-500">Rp. 2.500.000.000</p>
+										</div>
+										<p className="text-center p-2">Surplus/Defisit</p>
+									</div>
+
+									{/* Card Kedua */}
+									<div className="flex flex-col">
+										<div className="p-2 border-b">
+											<p className="text-sm italic">Pengeluaran</p>
+											<p className="font-extrabold text-xl text-red-500">Rp. 2.500.000.000</p>
+										</div>
+										<p className="text-center p-2 text-2xl font-bold text-red-500">Rp. 1.000.000.000</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -145,21 +170,21 @@ const ProfilePage = () => {
 					/>
 				</div>
 
-				<div className="bg-custom_background p-5 rounded-xl mt-2 md:mt-9 md:mb-6">
+				<div className="bg-custom_background p-5 rounded-xl mt-2 md:mt-9 md:mb-6 md:flex md:justify-center md:items-center md:gap-5">
+					<div className="mt-5 h-[20vh] w-full border-secondary border-8 rounded-xl justify-center items-center flex md:mt-0">
+						<p>Ini Charts nih</p>
+					</div>
 					<SmallCard
 						titleCard="Berdasarkan Umur"
 						text="Chart demografi penduduk berdasarkan umur menunjukkan distribusi usia di suatu wilayah. Data ini membantu perencanaan kebijakan di bidang pendidikan, kesehatan, dan kesejahteraan sosial."
 					/>
-					<div className="mt-5 h-[20vh] w-full border-secondary border-8 rounded-xl justify-center items-center flex">
-						<p>Ini Charts nih</p>
-					</div>
 				</div>
-				<div className="bg-custom_background p-5 rounded-xl mt-2">
+				<div className="bg-custom_background p-5 rounded-xl mt-2 md:flex md:justify-center md:items-center md:gap-5 md:mb-36	">
 					<SmallCard
 						titleCard="Berdasarkan Pendapatan"
 						text="Chart demografi penduduk berdasarkan pendapatan menunjukkan distribusi ekonomi masyarakat. Data ini membantu perencanaan kebijakan di bidang kesejahteraan, pemberdayaan, dan pembangunan ekonomi."
 					/>
-					<div className="mt-5 h-[20vh] w-full border-secondary border-8 rounded-xl justify-center items-center flex">
+					<div className="mt-5 h-[20vh] w-full border-secondary border-8 rounded-xl justify-center items-center flex md:mt-0">
 						<p>Ini Charts nih</p>
 					</div>
 				</div>
