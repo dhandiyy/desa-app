@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -7,7 +8,25 @@ import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
 	const pathname = usePathname();
-	
+	const [isOpen, setIsOpen] = useState(false);
+
+	// Fungsi untuk menutup navbar saat scroll ke bawah
+	useEffect(() => {
+		const handleScroll = () => {
+			if (isOpen) {
+				setIsOpen(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [isOpen]);
+
+	// Fungsi untuk menutup navbar saat berpindah halaman
+	useEffect(() => {
+		setIsOpen(false);
+	}, [pathname]);
+
 	return (
 		<div className="bg-primary p-4 sm:rounded-xl rounded-lg text-white">
 			<div className="relative flex flex-col sm:mx-6 sm:flex-row sm:items-center sm:justify-between">
@@ -28,23 +47,16 @@ const Navbar = () => {
 					</div>
 				</div>
 
-				<input
-					type="checkbox"
-					id="navbar-open"
-					className="hidden peer"
-				/>
-
-				<label
-					htmlFor="navbar-open"
-					className="cursor-pointer absolute right-2 md:mt-3 mt-2.5 sm:hidden"
+				{/* Tombol Menu */}
+				<button
+					onClick={() => setIsOpen((prev) => !prev)}
+					className="absolute right-2 md:mt-3 mt-2.5 sm:hidden"
 				>
-					<IoMenu
-						size={24}
-						className="block peer-checked:hidden"
-					/>
-				</label>
+					<IoMenu size={24} />
+				</button>
 
-				<nav className="peer-checked:block hidden mt-4 sm:mt-0 sm:block">
+				{/* Navigasi */}
+				<nav className={`${isOpen ? "block" : "hidden"} mt-4 sm:mt-0 sm:block`}>
 					<ul className="flex flex-col sm:flex-row gap-y-1 sm:gap-x-4 sm:pr-4">
 						<Link href={"/"}>
 							<li className="font-light relative group sm:text-lg">

@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
 import SmallCard from "@/components/SmallCard";
@@ -14,7 +13,7 @@ export default function Home() {
 		"Pelayanan desa tentang nikah gratis memberikan kesempatan bagi pasangan yang kurang mampu untuk melangsungkan pernikahan tanpa biaya. Program ini difasilitasi oleh pemerintah desa yang membantu dalam hal administrasi, pengurusan dokumen, serta proses pernikahan. Tujuannya adalah untuk mempermudah pasangan yang ingin menikah namun terkendala biaya, sekaligus memastikan legalitas pernikahan mereka sesuai dengan ketentuan hukum.";
 
 	return (
-		<div>
+		<div className="md:-mb-72">
 			{/* SECION1 */}
 			<Hero />
 
@@ -27,7 +26,7 @@ export default function Home() {
 					/>
 				</div>
 			</div>
-			<div className="min-h-screen w-full bg-custom_background md:rounded-tl-[250px] rounded-xl mt-3 -mb-32 pb-40">
+			<div className="min-h-screen w-full bg-custom_background md:rounded-tl-[250px] rounded-xl mt-3 pb-72">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-6 md:px-24 py-7">
 					<div className="relative mt-20 md:-mt-48 flex items-center justify-center rounded-lg invisible md:visible">
 						<div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]">
@@ -172,7 +171,6 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 }

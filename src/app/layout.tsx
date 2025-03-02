@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Montserrat_Alternates, Inter } from "next/font/google";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "Website Desa",
@@ -37,6 +38,7 @@ export default function RootLayout({
 			<body className="sm:p-3 p-2">
 				<Navbar />
 				{children}
+				<Footer/>
 			</body>
 		</html>
 	);

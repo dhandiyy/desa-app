@@ -4,7 +4,6 @@ import Title from "@/components/Title";
 import Image from "next/image";
 import SmallCard from "@/components/SmallCard";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import Footer from "@/components/Footer";
 
 const ProfilePage = () => {
 	const textLocation = `Desa Duko berbatasan dengan Desa Basoka di bagian selatan, dengan air terjun "Turbughen" atau "Buddhegen" sebagai penanda batas alami.`;
@@ -179,7 +178,7 @@ const ProfilePage = () => {
 						text="Chart demografi penduduk berdasarkan umur menunjukkan distribusi usia di suatu wilayah. Data ini membantu perencanaan kebijakan di bidang pendidikan, kesehatan, dan kesejahteraan sosial."
 					/>
 				</div>
-				<div className="bg-custom_background p-5 rounded-xl mt-2 md:flex md:justify-center md:items-center md:gap-5 md:mb-36	">
+				<div className="bg-custom_background p-5 rounded-xl mt-2 md:flex md:justify-center md:items-center md:gap-5">
 					<SmallCard
 						titleCard="Berdasarkan Pendapatan"
 						text="Chart demografi penduduk berdasarkan pendapatan menunjukkan distribusi ekonomi masyarakat. Data ini membantu perencanaan kebijakan di bidang kesejahteraan, pemberdayaan, dan pembangunan ekonomi."
@@ -189,7 +188,6 @@ const ProfilePage = () => {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

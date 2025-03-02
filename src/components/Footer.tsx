@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaInstagram, FaYoutube, FaTwitterSquare } from "react
 
 const Footer = () => {
 	return (
-		<div className={`flex flex-col text-white items-center justify-center md:pt-16 py-4 md:pb-5 relative z-10 bg-primary md:bg-transparent mt-8`}>
+		<div className={`flex flex-col text-white items-center justify-center md:pt-16 py-4 md:pb-5 relative z-10 bg-primary md:bg-transparent mt-8 md:mt-36`}>
 			<Image
 				src="/footer/footer.png"
 				alt="Footer background"

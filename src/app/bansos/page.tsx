@@ -6,7 +6,6 @@ import Title from "@/components/Title";
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaSearch } from "react-icons/fa";
-import Footer from "@/components/Footer";
 
 const BansosPage = () => {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -60,44 +59,7 @@ const BansosPage = () => {
 					/>
 				</div>
 
-				{/* <div className="bg-custom_background rounded-xl p-4 md:flex md:justify-center md:items-center">
-					<div className="relative w-full h-[150px] md:h-[250px] md:absolute">
-						<Image
-							src="/bansos/bansos-pict.png"
-							alt="Bansos"
-							fill
-							className="object-contain rounded-lg md:object-cover"
-							sizes="(max-width: 640px) 300px, (max-width: 768px) 400px, (max-width: 1024px) 400px, 600px"
-							priority
-						/>
-					</div>
-
-					<div className="bg-white rounded-xl p-2 text-sm">
-						<div className="p-4">
-							<h2 className="text-xl font-semibold mb-3">Cari Datamu</h2>
-
-							<div className="relative">
-								<div className="flex items-center relative">
-									<span className="absolute left-3 text-gray-400">
-										<FaSearch />
-									</span>
-									<input
-										type="text"
-										value={searchQuery}
-										onChange={(e) => setSearchQuery(e.target.value)}
-										className="pl-10 pr-4 py-2 w-full border-primary border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50"
-										placeholder="Cari data..."
-									/>
-								</div>
-
-								{searchQuery.trim() === "" && <p className="italic text-gray-400 mt-2">Tidak ada data</p>}
-							</div>
-						</div>
-						<p className="p-4">*Demi keamanan, hanya NIK yang sesuai yang ditampilkan</p>
-					</div>
-				</div> */}
-
-				<div className="bg-custom_background rounded-xl p-4 relative overflow-visible mb-12 md:mb-36">
+				<div className="bg-custom_background rounded-xl p-4 relative overflow-visible mb-12 md:mt-8">
 					{/* Container utama dengan flex pada desktop */}
 					<div className="flex flex-col md:flex-row md:items-center">
 						{/* Container untuk gambar */}
@@ -139,7 +101,6 @@ const BansosPage = () => {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };
