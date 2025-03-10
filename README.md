@@ -95,3 +95,8 @@ Phase 2:
 - [ ] Additional customization options
 - [ ] Performance optimization
 - [ ] Extended features
+
+## 🚀  Live Demo Sementara 
+Aplikasi telah di-deploy dan dapat diakses melalui tautan berikut:  
+
+🔗 [Desa App - Live Demo](https://desa-app.vercel.app/)
