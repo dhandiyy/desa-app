@@ -17,7 +17,7 @@ const Footer = () => {
 						src="/logo/Lambang_Kabupaten_Sumenep.png"
 						alt="Logo desa"
 						fill
-						className="object-contai"
+						className="object-contain"
 						sizes="(max-width: 768px) 64px, 48px"
 					/>
 				</div>

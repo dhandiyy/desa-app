@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import { Montserrat_Alternates, Inter } from "next/font/google";
-import Footer from "@/components/Footer";
+import React from "react";
+import { LayoutWrapper } from "./layoutWrapper";
 
 export const metadata: Metadata = {
 	title: "Website Desa",
@@ -35,10 +35,8 @@ export default function RootLayout({
 			lang="en"
 			className={`${inter.variable} ${montserrat.variable}`}
 		>
-			<body className="sm:p-3 p-2">
-				<Navbar />
-				{children}
-				<Footer/>
+			<body>
+				<LayoutWrapper>{children}</LayoutWrapper>
 			</body>
 		</html>
 	);
