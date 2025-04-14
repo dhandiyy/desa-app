@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { HiHome, HiSquares2X2, HiUser, HiCog6Tooth, HiInformationCircle, HiNewspaper, HiMiniUserGroup } from "react-icons/hi2";
+import { HiHome, HiSquares2X2, HiUser, HiCog6Tooth, HiInformationCircle, HiNewspaper, HiMiniUserGroup,HiChatBubbleLeftEllipsis } from "react-icons/hi2";
 
 // Navigation items
 const navigationItems = [
@@ -9,6 +9,11 @@ const navigationItems = [
 		title: "Dashboard",
 		icon: HiSquares2X2,
 		href: "/admin",
+	},
+	{
+		title: "Pengaduan Masyarakat",
+		icon: HiChatBubbleLeftEllipsis,
+		href: "/admin/pengaduan",
 	},
 	{
 		title: "Informasi Desa",
@@ -70,12 +75,12 @@ const SideBar = ({
 
 				{/* navigation */}
 				<div>
-					<nav className="space-y-3 p-5">
+					<nav className="space-y-4 p-5">
 						{navigationItems.map((item) => (
 							<Link
 								href={item.href}
 								key={item.title}
-								className="flex items-center"
+								className="flex items-center text-[14px]"
 							>
 								<item.icon className="mr-3 text-xl"/>
 								{item.title}
